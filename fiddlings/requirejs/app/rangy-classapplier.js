@@ -16,6 +16,7 @@ console.log("CLASS APPLIER");
 (function(factory, global) {
     if (typeof define == "function" && define.amd) {
         // AMD. Register as an anonymous module with a dependency on Rangy.
+        factory(window.rangy);
         define(["rangy"], factory);
 /*
     } else if (typeof exports == "object") {
